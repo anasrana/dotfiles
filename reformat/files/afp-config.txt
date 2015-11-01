@@ -1,0 +1,25 @@
+;
+; Netatalk 3.x configuration file
+;
+
+[Global]
+        spotlight = yes
+
+[Time Machine]
+        path = /mnt/TimeMachine
+        time machine = yes
+
+[NZBs]
+        path = /mnt/Extras/NZBs
+
+[TV]
+        path = /pool/TV
+
+[Movies]
+        path = /pool/Movies
+
+[Pictures]
+        path = /mnt/Storage/Life/Pictures
+
+[Storage]
+        path = /mnt/Storage

@@ -1,0 +1,81 @@
+#!/bin/sh
+
+#ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+brew install git
+brew install bash zsh
+brew install vim
+brew install iojs npm
+#brew install afl-fuzz
+
+brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
+
+brew cask install google-chrome
+brew cask install firefoxdeveloperedition
+
+brew cask install transmission
+brew cask install virtualbox
+
+brew cask install dropbox
+brew cask install spotify
+brew cask install slack
+brew cask install viscosity
+brew cask install transmit
+brew cask install evernote
+
+brew cask install the-unarchiver
+brew cask install keyboard-cleaner
+brew cask install imageoptim
+
+brew cask install textwrangler
+brew cask install atom
+brew cask install sublime-text3
+
+brew cask install vagrant
+brew cask install sequel-pro
+brew cask install sourcetree
+
+brew cask install vlc
+brew cask install kodi
+brew cask install handbrake
+
+brew cask install steam
+brew cask install appcleaner
+brew cask install robomongo
+
+brew cask install gfxcardstatus
+brew cask install keepingyouawake
+brew cask install itstat-menus
+brew cask install alfred
+brew cask install bettertouchtool
+brew cask install flux
+brew cask install bartender
+brew cask install totalfinder
+brew cask install dash
+
+brew cask install spectacle
+brew cask install 1password
+
+brew cask install blender
+brew cask install processing
+brew cask install vlc
+
+brew tap caskroom/fonts
+brew cask install font-inconsolata
+brew cask install font-fira-sans
+brew cask install font-fira-code
+brew cask install font-droid-sans
+brew cask install font-droid-sans-mono
+
+
+#brew cask install appfresh
+#brew cask install screenhero
+#brew cask install calibre
+#brew tap neovim/neovim
+#brew install --HEAD neovim
+#brew install the_silver_searcher
+#brew install autojump
+
+#ln -s /opt/homebrew-cask/Caskroom/firefoxdeveloperedition/latest/FirefoxDeveloperEdition.app /Applications
+#ln -s /opt/homebrew-cask/Caskroom/google-chrome/latest/Google\ Chrome.app /Applications

@@ -1,0 +1,16 @@
+UUID=75e0ff31-9826-4cdd-be7d-7f00de524863       /mnt/TV/1            ext4    defaults        0 2
+UUID=7504635c-418a-4d8f-9527-64bb210c41a3       /mnt/TV/2            ext4    defaults        0 2
+#UUID=e5abd764-05c8-400c-b09e-2e54e4bb7fa2       /mnt/TV/3            ext4    defaults        0 2
+UUID=ba061c1d-9301-4ae3-94e9-8698819601b1       /mnt/TV/3            ext4    defaults        0 2
+
+UUID=5f5dbf81-d28d-49a7-a783-1d4c07cd90b5       /mnt/Movies/1         ext4    defaults        0 2
+UUID=f81be41c-16d4-420e-845d-1a1180c32f73       /mnt/Movies/2         ext4    defaults        0 2
+
+UUID=918558a8-6bd8-4114-8c48-dd590285a3d9       /mnt/Storage    ext4    defaults        0 2
+UUID=8da5e1ce-74e4-42b1-a38c-f1d3bdc960d4       /mnt/Extras     ext4    defaults        0 2
+
+# Parity Disks
+UUID=7eca0cd3-7eb4-48d1-8eeb-090aac1be074       /mnt/Parity/1   ext4    defaults 0 2
+UUID=a588ae87-03ad-467f-8e79-ec3036caa222       /mnt/Parity/2   ext4    defaults        0 2
+
+UUID=879e0068-4ed7-401f-b6c9-5b6808bc95f0       /mnt/TimeMachine ext4 defaults 0 2

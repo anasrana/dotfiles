@@ -1,0 +1,39 @@
+#!/bin/bash
+
+SERVER="Debian-Server"
+DATE=$(date +%F)
+START=$(date +%s)
+LOGFILE="$HOME/logs/backup-$(date +%F).log"
+LOCKFILE=/mnt/Extras/Backups/$SERVER/$DATE.tar.gz
+
+clear
+
+if [ -e $LOCKFILE ]
+then
+  echo "There is already a backup for today at:"
+  echo "$LOCKFILE"
+
+  read -p "Would you like to remove and replace the existing backup? (y/N)" choice
+  case "$choice" in
+    y|Y )
+      rm -rf $LOCKFILE
+      rm -rf /tmp/$DATE-Backup
+      rm -rf $LOGFILE
+      ;;
+    * )
+      echo "BAIL BAIL BAIL!;"
+      exit
+      ;;
+  esac
+fi
+
+exec > >(tee -a $LOGFILE)
+rsync -aAXv /* /tmp/$DATE-Backup --exclude={/dev/*,/proc/*,/sys/*,/tmp/*,/run/*,/mnt/*,/media/*,/opt/snapraid/*,/var/lib/plexmediaserver/*,/lost+found,/pool/*}
+tar -vzcf /mnt/Extras/Backups/$SERVER/$DATE.tar.gz /tmp/$DATE-Backup
+rm -rf /tmp/$DATE-Backup
+
+echo "Logfile written to: $LOGFILE"
+
+FINISH=$(date +%s)
+
+echo "total time: $(( ($FINISH-$START) / 60 )) minutes, $(( ($FINISH-$START) % 60 )) seconds"

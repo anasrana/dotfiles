@@ -1,0 +1,2 @@
+@reboot mount -t aufs -o br:/mnt/TV/1/A-N=ro:/mnt/TV/2/O-Z=ro:/mnt/TV/3/Current=ro none /pool/TV
+@reboot mount -t aufs -o br:/mnt/Movies/1/HD:/mnt/Movies/2/SD none /pool/Movies

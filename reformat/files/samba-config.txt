@@ -1,0 +1,24 @@
+;[NZBs]
+;path = /mnt/Extras/NZBs
+;read only = no
+;guest ok = no
+
+[TV]
+path = /pool/TV
+read only = no
+guest ok = no
+
+[Movies]
+path = /pool/Movies
+read only = no
+guest ok = no
+
+[Pictures]
+path = /mnt/Storage/Life/Pictures
+read only = no
+guest ok = no
+
+;[Storage]
+;path = /mnt/Storage
+;read only = no
+;guest ok = no
